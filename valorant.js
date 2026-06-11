@@ -48,7 +48,7 @@ maps.forEach(map => {
 
     map.agents.forEach(agent => {
         agentsHTML += `
-            <img src="images/agents/${agent.toLowerCase()}.png"
+            <img src="images/Agents/${agent.toLowerCase()}.png"
                  class="agentImage"
                  alt="${agent}">
         `;
