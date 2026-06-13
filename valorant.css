@@ -1,15 +1,20 @@
-.valorantMapImage
-{
-  width: 200px;
-  height: 200px;
+.valorantMapImage {
+    width: 250px;
+    height: 200px;
+    display: block;
 }
 
-.mapName
-{
-  position: absolute;
-  top: 40%;
-  left: 4%;
-  font-size: larger;
+.mapName {
+    background-color: white;
+    color: black;      
+
+    padding: 15px;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    letter-spacing: -1px;
+    font-family: Impact, sans-serif;
 }
 
 .valorantMapRow {
@@ -25,6 +30,31 @@
   width: 150px;
   height: 150px;
   margin-left: 20px;
+}
+
+.agents {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 150px;
+  overflow-y: auto;        /* only scrolls when content overflows */
+}
+
+.agents::-webkit-scrollbar {
+  width: 6px;
+}
+
+.agents::-webkit-scrollbar-track {
+  background: rgb(20, 56, 56);   /* matches your row background */
+}
+
+.agents::-webkit-scrollbar-thumb {
+  background-color: rgb(86, 84, 84);     /* Valorant red */
+  border-radius: 10px;
+}
+
+.agents::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6b77;     /* slightly lighter on hover */
 }
 
 #mapsContainer {
