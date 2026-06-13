@@ -56,13 +56,17 @@ maps.forEach(map => {
 
 
     mapsContainer.innerHTML += `
-        <div class="valorantMapRow">
+    <div class="valorantMapRow">
 
+        <div class="mapCard">
             <img src="${map.image}" class="valorantMapImage">
-
             <div class="mapName">${map.name}</div>
-
-            <div class="agents"> ${agentsHTML} </div>
         </div>
-    `;
+
+        <div class="agents">
+            ${agentsHTML}
+        </div>
+
+    </div>
+`;
 });
