@@ -14,7 +14,7 @@
     }
 
     h1 {
-        color: #ff4655;
+        color: white;
         font-family: Impact, sans-serif;
         letter-spacing: 2px;
         border-bottom: 2px solid #ff4655;
@@ -26,9 +26,18 @@
 
 <body>
 
-  <h1 style="color: aliceblue;"> 
-    Best Agents for Every Map:
-  </h1>
+  <div id="header">
+    <h1>Best Agents for Every Map:</h1>
+    <div id="filterButtons">
+      <button onclick="filterAgents('all')">All</button>
+      <button onclick="filterAgents('duelist')" class="roleButton">
+        <img src="images/ButtonIcons/duelist.png" class="roleIcon">
+      </button>
+      <button onclick="filterAgents('initiator')">Initiator</button>
+      <button onclick="filterAgents('controller')">Controller</button>
+      <button onclick="filterAgents('sentinel')">Sentinel</button>
+    </div>
+  </div>
 
   <div id="mapContainer"></div>
 
